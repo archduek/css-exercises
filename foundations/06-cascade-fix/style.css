@@ -1,17 +1,36 @@
+/* Below we specify that we want the following fonts 
+to take effect for everything included in the body */
+
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+/* Below, we list .para and .small-para together because we
+want these classes to have the same font color and weight
+applied to them */
+
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
-  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Here, we use the class selector .para.small-para 
+to specify a font size for only the small paragraph */
 
 .para.small-para {
   font-size: 14px;
 }
 
+/* Here, we use the class selector .para 
+to specify a font size for only the normal paragraph */
+
 .para {
   font-size: 22px;
 }
+
+/* Below, we are using the ID selector to select the confirm button,
+and then setting some declarations we want to only apply to it */
 
 #confirm-button {
   background: green;
@@ -20,20 +39,32 @@
   font-size: 20px;
 } 
 
-#cancel-button {
+/* Here, we use the button class selector to target the Cancel button,
+which we are able to do since we used the higher-specificity ID
+selector to apply rules to the Confirm button */
+
+.button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.text.child {
+/* Next, we have some div elements in our HTML that have the class "text".
+For every div element that has a class with the matching keyword "text",
+we use div.text to apply a text color, font weight, and font size. */
+
+div.text {
   color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
+  font-weight: 100;
+  font-size: 22px;
 }
 
-.text {
+/* Last, we target the div element with the "text child" class
+directly using the div .child desendant combinator, which allows us to set some 
+specific declarations for it */
+
+div .child {
   color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: thin;
+  font-weight: 800px;
+  font-size: 14px;
 }
