@@ -31,7 +31,13 @@ img {
   flex-basis: 200px;
   align-items: center;
   flex-wrap: wrap;
-  margin: 52px;
+  margin-right: 52px;
+  margin-left: 52px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
 }
 
 /* do not edit this footer */
