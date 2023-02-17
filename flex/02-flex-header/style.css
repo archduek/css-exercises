@@ -1,6 +1,7 @@
 .header  {
+  padding: 8px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-family: monospace;
   background: papayawhip;
@@ -19,16 +20,15 @@
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  padding-inline-start: 0px;
+  margin: 0px;
+  padding: 0px;
+  gap: 8px;
 }
 
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
+  margin: 8px;
   text-decoration: none;
-  display: flex;
-  justify-content: space-around;
-  margin: 10px;
 }
