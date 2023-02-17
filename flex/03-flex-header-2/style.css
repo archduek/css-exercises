@@ -26,8 +26,6 @@ body {
 }
 
 .profile-image {
-  display: flex;
-  justify-content: space-between;
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .5);
   border-radius: 50%;
@@ -38,8 +36,6 @@ body {
 }
 
 .logo {
-  display: flex;
-  justify-content: space-between;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
@@ -49,8 +45,6 @@ body {
 }
 
 button {
-  display: flex;
-  justify-content: space-between;
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
